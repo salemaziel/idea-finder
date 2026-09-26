@@ -1,0 +1,34 @@
+{
+  "name": "idea-finder",
+  "version": "1.0.0",
+  "description": "Structured research guidance for identifying and validating product opportunities.",
+  "author": {
+    "name": "Evgeny Vlasov"
+  },
+  "homepage": "https://github.com/salemaziel/idea-finder",
+  "repository": "https://github.com/salemaziel/idea-finder",
+  "license": "MIT",
+  "keywords": [
+    "idea-generation",
+    "product-research",
+    "validation",
+    "startup"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Idea Finder",
+    "shortDescription": "Research and validate product opportunities",
+    "longDescription": "A guided research workflow for identifying, evaluating, and validating product opportunities.",
+    "developerName": "Evgeny Vlasov",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/salemaziel/idea-finder",
+    "defaultPrompt": [
+      "Use idea-finder to identify product opportunities from my experience.",
+      "Use idea-finder to evaluate and rank these business ideas."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
