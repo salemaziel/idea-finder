@@ -31,10 +31,16 @@ function persistAnswer(roleId, idx, text) {
 
 function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-  const [tab, setTab] = React.useState("map");          // map | network | opportunities | questions
+  const [tab, setTab] = React.useState(() => tabFromHash(window.location.hash));
   const [selectedId, setSelectedId] = React.useState(null);
   const [answers, setAnswers] = React.useState(loadAnswers); // { questionKey: { kind:'answer'|'skip', text? } }
   const [docOpen, setDocOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    const syncTab = () => setTab(tabFromHash(window.location.hash));
+    window.addEventListener("hashchange", syncTab);
+    return () => window.removeEventListener("hashchange", syncTab);
+  }, []);
 
   // Mirror answers to localStorage whenever they change.
   React.useEffect(() => {
@@ -78,6 +84,7 @@ function App() {
   );
 
   const onSelectRole = (id) => {
+    window.location.hash = TAB_HASHES.map;
     setTab("map");
     setSelectedId(id);
   };
@@ -104,14 +111,15 @@ function App() {
 
       <nav className="nav" aria-label="Primary">
         {tabs.map((x, i) => (
-          <button
+          <a
             key={x.key}
+            href={TAB_HASHES[x.key]}
             className={`nav-btn ${tab === x.key ? "is-active" : ""}`}
-            onClick={() => setTab(x.key)}
+            aria-current={tab === x.key ? "page" : undefined}
           >
             <span>{String(i + 1).padStart(2, "0")} · {x.label}</span>
             {x.count != null && <span className="nav-btn-count">{x.count}</span>}
-          </button>
+          </a>
         ))}
       </nav>
 

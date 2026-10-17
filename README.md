@@ -145,6 +145,10 @@ Type `/render` at any point to rebuild the visual self-map from the latest docum
 
 Type `/render` at any point during discovery and Claude will run the render script, transforming your `discovery.md` into a live local webpage at **http://localhost:3737**.
 
+Each tab has its own bookmarkable URL, such as `http://localhost:3737/Self-Map.html#network`. Browser Back and Forward move between tabs.
+
+For local checks, run `npm ci`, `npm test`, and `npm run test:e2e` (install Playwright Chromium once with `npx playwright install chromium` if needed).
+
 The interface is designed to pull you back in — to make what you've uncovered feel real and navigable, so the next dig feels obvious rather than overwhelming:
 
 - **Self-map** — a table of every role you inhabit, each one a market you already live in. Click any role to open its detailed view: the problems people in that role face, how they're currently solving them, and where the opportunities are. A starting point for the next dig, not a summary of the last one.
