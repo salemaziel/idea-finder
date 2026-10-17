@@ -119,6 +119,7 @@ p { margin: 0; }
 }
 .nav-btn {
   appearance: none;
+  text-decoration: none;
   background: none;
   border: 0;
   padding: 14px 0 12px;
