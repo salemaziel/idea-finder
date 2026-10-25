@@ -57,6 +57,8 @@ Open `http://localhost:3737/Self-Map.html`. Both scripts use `~/idea-finder/disc
 
 The UI includes role views, opportunities, network, open questions and the full source document. Existing headings and `### Problem N:` blocks remain stable. New evidence fields are retained in the full document; the map does not display every assessment field as a separate widget. The browser loads React and Babel from a CDN, so an offline browser may not render the app.
 
+Each tab has its own bookmarkable URL, such as `http://localhost:3737/Self-Map.html#network`. Browser Back and Forward move between tabs.
+
 ## Files and verification
 
 - `skills/idea-finder/SKILL.md`: routing, discovery principles and command index.
@@ -64,6 +66,7 @@ The UI includes role views, opportunities, network, open questions and the full 
 - `references/`: compatibility pointers to the skill-local references.
 - `scripts/`: Markdown-to-map renderer and answer server.
 - `ui/`: visual self-map.
+- `tests/`: self-map UI checks. Run `npm ci`, `npm test` and `npm run test:e2e` (install Playwright Chromium once with `npx playwright install chromium` if needed).
 - `evals/`: frozen original/compressed baselines, fixed multi-turn scenarios, review rubric and compatibility checks.
 - `REVISION.md`: behavior inventory, changes, verification evidence and limitations.
 
