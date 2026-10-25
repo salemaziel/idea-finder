@@ -1,17 +1,5 @@
-# Network Mapping Guide
+# Reference location
 
-## Interviewability scoring (max 25)
+Use the authoritative skill-local [network-mapping reference](../skills/idea-finder/references/network-mapping.md).
 
-| Dimension | 1 | 3 | 5 |
-|-----------|---|---|---|
-| Relationship strength | Cold | Warm | Close — will be honest |
-| Openness about work | Private | Will share if asked | Openly complains |
-| Role operationality | Strategic | Mix | Highly operational |
-| Software spend | Free only | 1–2 paid tools | Multiple paid tools |
-| AI/tech exposure | Avoids tech | Some exposure | Actively evaluates |
-
-## Outreach message
-
-> "Hey [Name], I'm exploring a career change into building software for
-> [industry]. Not selling anything — just trying to understand what the
-> real day-to-day work looks like. Up for a 30-min call this week?"
+This file is a compatibility pointer; assessment and command rules live with the skill.

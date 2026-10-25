@@ -1,21 +1,19 @@
-# Validation Playbook
+# Contextual validation
 
-## Four-step ladder (do not skip)
+Investigate the most consequential uncertainty using the smallest feasible test. There is no mandatory ladder, interview count, conversion threshold, payment amount or universal “build” gate.
 
-Step 1 — Conversation validation (weeks 1–4)
-10–15 interviews. Pass: 80%+ describe same pain unprompted, 3+ unprompted WTP signals.
+Before collecting results record in VALIDATION PLAN:
+1. Customer/context and falsifiable problem hypothesis; distinguish incidence, consequence and payment assumptions.
+2. Existing evidence, contradictions and the decision this test could change.
+3. Target/recruitment route, access constraints, founder time/budget, purchase cycle and sampling limitations.
+4. Action, time box and observable evidence to capture.
+5. Success and disconfirming signals appropriate to this test, with a rationale for chosen criteria. Distinguish an access failure or ambiguous result from evidence against the problem.
+6. Continue/narrow/pause decision and fallback if recruitment fails or evidence is inconclusive.
 
-Step 2 — Public signal test (overlaps Step 1)
-Post in communities: "Does anyone deal with [exact pain]?" — not a pitch.
-Pass: 5+ strangers describe the same pain.
+Tailor a short non-leading interview script using [interview guidance](interview-scripts.md). Offer a neutral outreach draft suitable for the reachable audience: “I'm learning how [role] handles [workflow]. Could you walk me through a recent instance, including what worked well?” Avoid embedding the pain conclusion. Never send or publish the draft without instruction.
 
-Step 3 — Landing page test
-1-page: problem + outcome, no product. Waitlist. $200 in ads or Reddit post.
-Pass: 5–10% visit-to-signup conversion.
+Examples of test shapes, not required thresholds: inspect a past costly incident and existing prevention spend for an annual risk; compare the workflow of a reporting customer with a satisfied one; ask an actual buyer about the last relevant approval decision when payment is unknown. A short artifact walkthrough may fit limited time better than multiple interviews.
 
-Step 4 — Paid commitment test
-Ask 3–5 interviewees to pre-pay $100–$500. "5 design partners, small deposit."
-Pass: at least 3 people pay.
+Analyze results against the criteria set beforehand; preserve negative and ambiguous findings. Do not move goalposts retrospectively. Record sampling bias, source independence and what the test cannot establish. Reassess candidate dimensions only where evidence changed.
 
-Build when: 3+ people paid, you can name 10 more exact-fit customers,
-minimum viable version describable in 2–3 sentences.
+Stay in problem discovery until the founder explicitly chooses solution experiments. Only then consider prototypes, landing pages, paid pilots or commitments appropriate to the purchase cycle and available resources. Waitlists are interest, promised purchases are not payments, and neither guarantees retention. Record what a test demonstrates without calling the whole business validated.

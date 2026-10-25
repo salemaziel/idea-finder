@@ -1,22 +1,26 @@
 {
   "skill_name": "idea-finder",
+  "behavioral_suite": "fixtures/discovery-scenarios.json",
+  "fixed_evidence": "fixtures/fixed-evidence.json",
+  "rubric": "rubric.md",
+  "note": "These smoke cases align with the behavioral suite. The pre-revision file is preserved at baselines/legacy-evals.json.",
   "evals": [
     {
       "id": 1,
       "prompt": "I've been a software engineer for 8 years mostly in fintech and I have some savings and I want to build a startup but I have no idea where to start. I know a bunch of people — my wife is a recruiting coordinator, my friend runs a small property management company, and I worked with a bunch of accountants at my last job. What should I build?",
-      "expected_output": "Skill interviews the founder, does web research on all three industries, identifies candidate problems with workarounds, ranks them, generates interview scripts, creates discovery.md automatically. Does NOT suggest a specific product.",
+      "expected_output": "Skill establishes the founder's goal, time, constraints, observations, and customer access; asks two or three relevant questions; follows the most concrete incident rather than researching every named industry; records unknowns without fabricated scores; and does not suggest a product.",
       "files": []
     },
     {
       "id": 2,
       "prompt": "I'm a freelance graphic designer and I do a lot of Instagram content for small businesses. I also do some video editing and podcast thumbnails. My friends are all in creative fields — one does social media management, one is a photographer, one runs a small marketing agency. I want to build something but I feel like everything's already been built. Can you help me find a problem worth solving?",
-      "expected_output": "Skill interviews the founder, addresses the 'everything's been built' objection, researches creative industry workflows, surfaces candidate problems, generates tailored scripts, creates discovery.md.",
+      "expected_output": "Skill explores specific recent incidents across work and relationships, reflects interpretations for confirmation, distinguishes experience from external evidence, and proposes a feasible evidence-gathering next step without requiring exhaustive intake or a product pitch.",
       "files": []
     },
     {
       "id": 3,
       "prompt": "Round 2: founder returns with interview notes. No pasted document — skill should auto-load ~/idea-finder/discovery.md from disk.",
-      "expected_output": "Skill reads existing discovery.md from disk, processes interview data, updates rankings, surfaces WTP signals, incorporates financial loss data, saves updated v2 document.",
+      "expected_output": "Skill reads the existing discovery.md, preserves original quotes and findings, adds supporting evidence and contradictions, labels unexplained old scores as legacy, keeps unsupported willingness to pay unknown, and chooses the next discriminating test without requiring migration.",
       "files": []
     }
   ]

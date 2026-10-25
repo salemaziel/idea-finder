@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_id", "failure_gates", "scores", "assessment_contract", "overall_annotation", "uncertainty_note"],
+  "properties": {
+    "output_id": {"type": "string"},
+    "failure_gates": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["gate", "citation"],
+        "properties": {"gate": {"type": "string"}, "citation": {"type": "string"}}
+      }
+    },
+    "scores": {
+      "type": "object", "additionalProperties": false,
+      "required": ["adaptive_listening", "specificity_originality", "evidence_fidelity", "contradiction_response", "decision_usefulness", "founder_effort"],
+      "properties": {
+        "adaptive_listening": {"$ref": "#/$defs/judgment"},
+        "specificity_originality": {"$ref": "#/$defs/judgment"},
+        "evidence_fidelity": {"$ref": "#/$defs/judgment"},
+        "contradiction_response": {"$ref": "#/$defs/judgment"},
+        "decision_usefulness": {"$ref": "#/$defs/judgment"},
+        "founder_effort": {"$ref": "#/$defs/judgment"}
+      }
+    },
+    "assessment_contract": {
+      "type": "object", "additionalProperties": false,
+      "required": ["five_dimensions_only", "ten_points_each", "unknowns_preserved", "no_incomplete_total", "confidence_separate", "venture_separate"],
+      "properties": {
+        "five_dimensions_only": {"type": ["boolean", "null"]},
+        "ten_points_each": {"type": ["boolean", "null"]},
+        "unknowns_preserved": {"type": ["boolean", "null"]},
+        "no_incomplete_total": {"type": ["boolean", "null"]},
+        "confidence_separate": {"type": ["boolean", "null"]},
+        "venture_separate": {"type": ["boolean", "null"]}
+      }
+    },
+    "overall_annotation": {"type": "string"},
+    "uncertainty_note": {"type": "string"}
+  },
+  "$defs": {
+    "judgment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["score", "citation"],
+      "properties": {"score": {"type": "integer", "minimum": 0, "maximum": 4}, "citation": {"type": "string"}}
+    }
+  }
+}

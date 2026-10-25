@@ -1,17 +1,7 @@
-# Network Mapping Guide
+# Customer access
 
-## Interviewability scoring (max 25)
+Map actual relationships, roles, user/buyer status, introductions available, willingness to talk and time constraints in NETWORK CONTACTS. Treat close friends as accessible but potentially polite or atypical; do not assume closeness guarantees honesty or representativeness. Seek independent or dissenting perspectives when feasible.
 
-| Dimension | 1 | 3 | 5 |
-|-----------|---|---|---|
-| Relationship strength | Cold | Warm | Close — will be honest |
-| Openness about work | Private | Will share if asked | Openly complains |
-| Role operationality | Strategic | Mix | Highly operational |
-| Software spend | Free only | 1–2 paid tools | Multiple paid tools |
-| AI/tech exposure | Avoids tech | Some exposure | Actively evaluates |
+Use the accessibility dimension in the canonical assessment rather than a separate contact score. Software spending and enthusiasm for technology are not prerequisites for a useful interview. Distinguish possible introductions from confirmed access.
 
-## Outreach message
-
-> "Hey [Name], I'm exploring a career change into building software for
-> [industry]. Not selling anything — just trying to understand what the
-> real day-to-day work looks like. Up for a 30-min call this week?"
+Draft a truthful, specific invitation: “I'm learning how [workflow] works for [role]. Could we spend [appropriate time] walking through a recent instance? I'm not selling anything.” Ask for a referral when useful, without quotas. Do not claim a career change or plan to build software unless the founder said so. Save drafts with scripts; sending requires instruction.

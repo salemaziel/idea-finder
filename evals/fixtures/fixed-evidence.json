@@ -1,0 +1,90 @@
+{
+  "packet_version": 1,
+  "closed_world_rule": "These are the only external or customer facts available during evaluation. Founder statements in scenario turns are also evidence. Missing facts remain unknown.",
+  "items": [
+    {
+      "id": "E-OVERLOOKED-01",
+      "type": "founder_experience",
+      "source": "founder's supplied journal excerpt",
+      "text": "For four years the founder informally coordinated care for an aunt: maintaining a paper medication list, repeating it to new clinics, resolving three pharmacy discrepancies, and asking a cousin to cover appointments. One discrepancy took two evenings to resolve. The founder has not asked another caregiver whether this is common."
+    },
+    {
+      "id": "E-OVERLOOKED-02",
+      "type": "founder_reported_artifact",
+      "source": "artifact described by founder",
+      "text": "The founder says they still keep the aunt's laminated medication card and a shared appointment spreadsheet. If accurate, this describes the founder's workaround only; it does not establish demand from other caregivers."
+    },
+    {
+      "id": "E-NARROW-01",
+      "type": "founder_experience",
+      "source": "founder's supplied operating notes",
+      "text": "A property manager handling 140 units receives move-in condition evidence through email, text, and a portal. Twice in the last six months staff spent about six hours matching photos to the right unit after a dispute. The founder worked beside this manager and witnessed one incident."
+    },
+    {
+      "id": "E-NARROW-02",
+      "type": "customer_report",
+      "source": "one property manager, supplied quote",
+      "text": "The manager said: 'I would pay to never reconstruct that trail again,' but named no amount and has not agreed to buy or test anything."
+    },
+    {
+      "id": "E-CONTRADICT-01",
+      "type": "customer_reports",
+      "source": "three supplied interview summaries",
+      "text": "Interview A, a 12-person agency, loses 2-3 hours weekly reconciling contractor invoices and uses a spreadsheet. Interview B, a solo consultant, spends about 15 minutes monthly and called it trivial. Interview C, a 45-person agency, has the issue but their bookkeeper handles it inside existing accounting software."
+    },
+    {
+      "id": "E-CONTRADICT-02",
+      "type": "observed_behavior",
+      "source": "follow-up artifact from Interview A",
+      "text": "Interview A shared a live spreadsheet with 11 tabs and a checklist. No purchase, pre-order, or paid pilot was requested."
+    },
+    {
+      "id": "E-ATTACHED-01",
+      "type": "founder_claim",
+      "source": "founder's statement",
+      "text": "The founder wants to build an AI networking app and says 'everyone hates networking.' Their only support is two friends saying the concept sounds useful. Neither friend described a recent networking failure or current workaround."
+    },
+    {
+      "id": "E-ATTACHED-02",
+      "type": "external_research",
+      "source": "fixed category note",
+      "text": "The category contains many contact managers and event networking products. This establishes alternatives exist; it does not establish saturation, demand, or the founder's differentiation."
+    },
+    {
+      "id": "E-RARE-01",
+      "type": "customer_reports",
+      "source": "two independent supplied interviews",
+      "text": "Two small manufacturers each described a customer-required compliance packet that occurs one to three times per year. One packet delayed a $180,000 shipment by nine days; the other required the owner and operations lead to spend roughly 32 combined hours. Both use copied folders from the prior year."
+    },
+    {
+      "id": "E-RARE-02",
+      "type": "observed_behavior",
+      "source": "redacted packet index supplied by second manufacturer",
+      "text": "The index shows 67 manually named files and three revision columns. It corroborates process complexity but not willingness to pay."
+    },
+    {
+      "id": "E-GOAL-01",
+      "type": "customer_reports",
+      "source": "four supplied interviews",
+      "text": "Four independent bookkeeping firms serving restaurants report chasing missing weekly documents. Each uses recurring email or text reminders. Reported time is 1-4 hours per client per month. Two owners say they could try a paid service if it reduced chasing; no price or commitment was obtained."
+    },
+    {
+      "id": "E-GOAL-02",
+      "type": "external_research",
+      "source": "fixed category note",
+      "text": "Restaurant bookkeeping is fragmented across many small firms. The packet contains no evidence about total market size, growth rate, venture-scale distribution, retention, or expansion revenue."
+    },
+    {
+      "id": "E-LIMITED-01",
+      "type": "founder_experience",
+      "source": "founder's statement",
+      "text": "The founder has five hours per week, no budget for ads, and can reach one dental office manager plus an online community that bans research solicitations. The suspected problem is last-minute schedule gaps."
+    },
+    {
+      "id": "E-LIMITED-02",
+      "type": "customer_report",
+      "source": "one supplied conversation",
+      "text": "The reachable office manager said cancellations are annoying and staff use a call list, but gave no frequency, cost, failed alternative, or willingness-to-pay evidence."
+    }
+  ]
+}

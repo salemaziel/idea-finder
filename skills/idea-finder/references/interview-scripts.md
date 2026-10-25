@@ -1,34 +1,17 @@
-# Interview Script Guide
+# Non-leading customer interviews
 
-## Structure (30–45 min)
+Tailor a script to the contact, known workflow, uncertainty and available time. A five-minute incident walkthrough is valid; do not require a 30–45 minute call. Open: “I'm learning how [workflow] works. Could you walk me through a recent example?” Avoid starting with a software pitch or telling the person what pain they should have.
 
-Opening: "I'm exploring building software for [industry]. Not selling —
-trying to understand what the real work looks like. Can I walk through a
-recent week with you?"
+Choose questions conversationally, following the answers:
+- What happened the last time? What happened next?
+- Who was involved, and what did each person do?
+- What worked well? Where, if anywhere, did it become difficult?
+- What consequence did that have? How was that amount or time estimated?
+- How did you handle it? What else have you tried, and why keep this approach?
+- When has this not been a problem? How do other teams handle it?
+- What have you actually spent to address it? Who decided, and how did approval work?
+- Is there an artifact you can share or walk through? Who has a different perspective?
 
-Warm-up (5 min): What did Monday look like? What's changed in the last year?
-If someone new started your job tomorrow, what would go wrong first?
+Do not ask “Would you use/pay for my idea?” as demand evidence. If a hypothetical answer is supplied, label it as such. Distinguish users, buyers and approvers. A customer describing an action is still a report, not direct observation.
 
-Workflow mapping (12 min): Walk me through [core workflow] start to finish.
-What tools at each step? What happens when [common disruption] occurs?
-
-Pain probing (8 min): What part of your week do you dread? When did X last
-cause a real problem — lost money, a customer, a complaint? Full story.
-
-Workaround detection (5 min): What do you track in a spreadsheet that should
-be in your main tool? What's your most brittle process? What do you
-copy-paste every week?
-
-WTP signal (3 min): Has your company bought a tool for this? If a tool saved
-you X hours/week, what would you pay? What would your manager approve?
-
-Closing: Anything I should have asked? Who else should I talk to?
-
-## Post-interview capture (within 1 hour)
-
-1. Most painful moment (verbatim quote)
-2. Current workaround (exactly what they do)
-3. Dollar amounts (time cost, losses, tool spend)
-4. WTP signal — prompted or unprompted?
-5. Referrals
-6. Confidence this pain is real (1–5)
+Before the call save the script in INTERVIEW SCRIPTS. After returned notes, preserve originals/quotes, source/contact/date, context, incident, workaround, costs with units and uncertainty, payment signals and whether prompted, contradictions, and referrals in INTERVIEW DATA. Put synthesis and conflicting segment explanations in INSIGHTS ACROSS INTERVIEWS; update candidates and OPEN QUESTIONS. Never invent missing answers or smooth disagreement into consensus. State the new discriminating question and any assessment change with reasons.

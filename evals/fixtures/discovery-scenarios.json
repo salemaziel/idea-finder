@@ -1,0 +1,146 @@
+{
+  "fixture_version": 1,
+  "shared_run_rules": {
+    "runs_per_version": 2,
+    "versions": ["original", "compressed", "revised"],
+    "research_mode": "closed_packet_only",
+    "turn_policy": "Send every user turn verbatim and in order. Do not tailor later turns to the assistant response.",
+    "required_artifacts": ["transcript.jsonl", "discovery.md", "run-metadata.json"]
+  },
+  "scenarios": [
+    {
+      "id": "S1-overlooked-experience",
+      "title": "Uncertain founder with useful but overlooked experience",
+      "evidence_ids": ["E-OVERLOOKED-01", "E-OVERLOOKED-02"],
+      "turns": [
+        "I want to start some kind of business, but I don't have an idea. I have about 15 hours a week and would be happy with a durable small business, though I'm open to something bigger. I spent ten years in payroll operations, help my aunt with medical appointments, volunteer at a community theater, and know people in all three worlds. Help me figure out where to look.",
+        "The care-coordination part is emotionally tiring, but I never thought of it as business experience. The specific messiest incident and my workaround are in the supplied evidence packet. In payroll I mostly used mature systems and can't recall a sharp pain right now. At the theater, ticket refunds are annoying but rare. I can talk to three other family caregivers this month.",
+        "/next"
+      ],
+      "expected_behavior": [
+        "Establishes goal, time, and access early without requiring demographic intake.",
+        "Surfaces care coordination as a candidate from whole-life experience while treating prevalence and willingness to pay as unknown.",
+        "Asks two or three relevant founder-response questions in each conversational discovery turn and reflects the inferred care-coordination pattern for confirmation.",
+        "Chooses a caregiver conversation or artifact-focused test that could disconfirm transferability beyond the founder."
+      ],
+      "watch_for": ["Exhaustive 13-block questionnaire", "Payroll chosen merely because it is professional experience", "Claim that caregiver demand is proven"]
+    },
+    {
+      "id": "S2-narrow-bypass",
+      "title": "Founder with a narrow problem who should bypass broad intake",
+      "evidence_ids": ["E-NARROW-01", "E-NARROW-02"],
+      "turns": [
+        "I do not need broad idea exploration. I want to investigate one problem: property managers reconstructing scattered move-in photos during deposit disputes. I have eight hours a week and direct access to the manager in the evidence packet plus two peers. Is this problem worth another week of discovery?",
+        "The manager's quote is all the willingness-to-pay evidence I have. The two peers use the same portal vendor, but I have not interviewed them. I care more about reaching a paid niche than venture scale.",
+        "/validate move-in evidence reconstruction"
+      ],
+      "expected_behavior": [
+        "Routes directly to focused investigation rather than age, location, or whole-life intake.",
+        "Separates the witnessed incident, customer quote, and unknown price or purchase commitment.",
+        "Sets contextual test criteria before collection and produces neutral, non-leading questions for the two peers.",
+        "Keeps the work problem-focused and does not prescribe a product."
+      ],
+      "watch_for": ["Restarts Round 1", "Treats 'would pay' as a sale", "Requires a universal interview count"]
+    },
+    {
+      "id": "S3-returning-contradictions",
+      "title": "Returning founder with contradictory interviews",
+      "initial_record": "fixtures/records/legacy-returning.md",
+      "evidence_ids": ["E-CONTRADICT-01", "E-CONTRADICT-02"],
+      "turns": [
+        "I'm back with three interviews about contractor-invoice reconciliation. Update my existing discovery record from the supplied evidence, tell me what changed, and don't smooth over the contradictions.",
+        "Agency A offered to introduce me to its bookkeeper, but nobody offered to pay. I had previously scored willingness to pay 8/10 based on my own guess.",
+        "/next"
+      ],
+      "expected_behavior": [
+        "Resumes the supplied record without restarting intake and preserves its source text.",
+        "Labels the old unexplained score as legacy rather than carrying it forward as current evidence.",
+        "Segments the conflicting reports by company context and lowers or marks willingness to pay unknown.",
+        "Uses the A introduction or a segment-discriminating question as the next test, with success, disconfirming, and fallback signals."
+      ],
+      "watch_for": ["Averages contradictory interviews into false consensus", "Keeps 8/10 WTP", "Deletes prior quotes or findings"]
+    },
+    {
+      "id": "S4-attached-weak-evidence",
+      "title": "Founder attached to an idea whose evidence is weak",
+      "evidence_ids": ["E-ATTACHED-01", "E-ATTACHED-02"],
+      "turns": [
+        "I am convinced my AI networking app is the one. Everyone hates networking and two friends said they'd use it. I can spend six months building. Help me validate it, but please be candid.",
+        "No, neither friend told me about a recent failed networking attempt. I showed them mockups first and asked if they liked the idea. I do not yet have access to a specific professional group.",
+        "/next"
+      ],
+      "expected_behavior": [
+        "Acknowledges the founder's commitment while distinguishing concept compliments from problem or demand evidence.",
+        "Does not invent market facts or convert category alternatives into proof the idea is good or bad.",
+        "Investigates a concrete recent incident and access before recommending solution experiments.",
+        "Allows pausing the candidate or saying none is ready, with a small disconfirming next step."
+      ],
+      "watch_for": ["Validates the idea to please the founder", "Automatically eliminates it due to competitors", "Recommends building an MVP before problem evidence"]
+    },
+    {
+      "id": "S5-rare-expensive",
+      "title": "Promising infrequent but expensive problem",
+      "evidence_ids": ["E-RARE-01", "E-RARE-02"],
+      "turns": [
+        "Two manufacturers told me annual compliance packets are a nightmare, but the work happens only one to three times a year. I know both owners and have their evidence packet. Should low frequency rule this out? I want a profitable specialist business, not necessarily a startup that raises money.",
+        "The delayed shipment and 32 hours are the only cost observations. Neither owner named a budget. Their next packet cycles start in two and five months.",
+        "/compare compliance packets vs pause this candidate"
+      ],
+      "expected_behavior": [
+        "Keeps a rare costly problem eligible and reasons about event value, timing, and purchase cycle.",
+        "Scores frequency low or records it accurately without treating that dimension as an automatic veto.",
+        "Keeps willingness to pay unknown and separates two customer reports from the corroborating artifact.",
+        "Makes the pursue-versus-pause tradeoff explicit and proposes a pre-cycle test appropriate to access and timing."
+      ],
+      "watch_for": ["Eliminates solely for low frequency", "Infers budget from shipment value", "Applies a SaaS-style weekly usage threshold"]
+    },
+    {
+      "id": "S6-goal-dependent",
+      "title": "Same opportunity under small-business versus venture goals",
+      "evidence_ids": ["E-GOAL-01", "E-GOAL-02"],
+      "variants": [
+        {
+          "id": "small-business",
+          "turns": [
+            "Evaluate the restaurant-document chasing problem in the evidence packet. My goal is a bootstrapped business that could reach $300,000 in annual owner earnings. I have bookkeeping experience, know four firms, and can work full time.",
+            "I am comfortable starting with a narrow service-heavy offer if the problem is real. I do not need a billion-dollar market.",
+            "/score"
+          ],
+          "expected_behavior": ["Assesses feasibility against the stated owner-earnings goal", "Does not penalize the common score for absent venture traits"]
+        },
+        {
+          "id": "venture",
+          "turns": [
+            "Evaluate the restaurant-document chasing problem in the evidence packet. My goal is a venture-backed company with the potential for $100M+ annual revenue. I have bookkeeping experience, know four firms, and can work full time.",
+            "I need to know which venture assumptions are still unsupported before I commit, even if the niche itself could be profitable.",
+            "/score"
+          ],
+          "expected_behavior": ["Keeps the same five-dimension common assessment grounded in the same evidence", "Separately flags market size, distribution, retention, and expansion as unknown venture considerations"]
+        }
+      ],
+      "expected_behavior": [
+        "Uses identical evidence labels and common-dimension scores or unknowns across both variants unless the goal itself legitimately changes founder-fit interpretation.",
+        "Changes the recommendation because the founder's target differs, explaining the tradeoff rather than manipulating the common score.",
+        "Does not fabricate a market size for either variant."
+      ],
+      "watch_for": ["Calls the small-business case weak solely for lacking venture scale", "Claims venture potential from four reports", "Uses different factual evidence across variants"]
+    },
+    {
+      "id": "S7-limited-access",
+      "title": "Limited time or customer access requiring a smaller next step",
+      "evidence_ids": ["E-LIMITED-01", "E-LIMITED-02"],
+      "turns": [
+        "I have five hours a week, no research budget, and almost no access to dental offices. I suspect last-minute schedule gaps are painful. The one office manager I can reach is in the evidence packet. What can I realistically learn this week?",
+        "I can ask that manager for 20 minutes and request a redacted count from the last four weeks, but I cannot recruit ten interviews or post in the community.",
+        "/next"
+      ],
+      "expected_behavior": [
+        "Adapts effort to the founder's five-hour limit and available relationship.",
+        "Chooses a 20-minute incident interview and/or redacted historical count rather than a fixed interview quota.",
+        "States expected learning, success and disconfirming signals, and a fallback if access is declined.",
+        "Does not treat one manager's annoyance as evidence of a market."
+      ],
+      "watch_for": ["Requires ten interviews this week", "Suggests violating the community rule", "Produces a broad market-research plan disconnected from the access constraint"]
+    }
+  ]
+}

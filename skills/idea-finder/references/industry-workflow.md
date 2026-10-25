@@ -1,31 +1,9 @@
-# Industry Research Guide
+# Decision-driven industry research
 
-## What to research per role
+Start with a named uncertainty, the current evidence, and the decision the research might change. Research only relevant roles/workflows; use no search quotas. A founder with an incident may need one alternative checked, while an uncertain founder may benefit from exploring a neglected life/community role.
 
-For every role the founder represents, find:
-1. What is the core repeating goal/job for this role?
-2. What does success look like for people in this role?
-3. What software/tools do they use? What's missing?
-4. What are their most common workarounds?
-5. What do practitioners report as their biggest frustrations?
+Choose queries around the exact job, incident, workaround, buyer and setting. Possible queries include “[role] [workflow] workaround”, “[tool] [specific failure] review”, or “[segment] [incident] cost report”. These are options, not a checklist. Verify publication dates and scope rather than assuming a trend is current.
 
-## High-signal workaround patterns
+Capture source URL/date, short exact excerpt, source type, relevant finding and limits in ROLE RESEARCH. Separate prevalence, consequence and spending claims. A spreadsheet may be an adequate solution; copying data may be cheap; hiring may reflect normal service delivery. Investigate the burden rather than inferring demand from the tool.
 
-| Pattern | What it signals |
-|---------|----------------|
-| "I track X in a Google Sheet" | No software solves this |
-| "I copy-paste between [A] and [B]" | Integration gap |
-| "I have a reminder to..." | Automation opportunity |
-| "We hired someone just to do X" | Pain expensive enough to staff around |
-| "I use [consumer tool] for work" | Work tool missing a feature |
-| "I email/text every [period] to chase..." | Recurring coordination cost |
-
-## Web search queries per role
-
-Replace [role] with specifics. Run at least 3 per role:
-
-1. `[role] biggest frustrations workflow problems site:reddit.com`
-2. `[role] manual process workaround spreadsheet`
-3. `[role] goals what success looks like`
-4. `[role] software pain points reviews site:g2.com OR site:capterra.com`
-5. `[role] time wasted survey statistics 2025 2026`
+After each useful result ask whether another search could change the decision. Stop when sources repeat, fail to address the segment, or the key gap is firsthand workflow/budget/access information better learned in conversation. Record that gap and the next person or artifact to seek. Do not fill required-looking template fields with unsupported market estimates; mark them not investigated or not relevant.

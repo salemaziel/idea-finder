@@ -1,0 +1,84 @@
+{
+  "fixture_version": 1,
+  "purpose": "Focused checks that every preserved command produces its promised output and updates the durable record when applicable.",
+  "shared_rules": {
+    "initial_record": "fixtures/records/revised.md",
+    "evidence_ids": ["E-NARROW-01", "E-NARROW-02", "E-CONTRADICT-01", "E-RARE-01"],
+    "closed_packet_only": true,
+    "preserve_source_material": true
+  },
+  "cases": [
+    {
+      "id": "C-dig",
+      "prompt": "/dig property manager",
+      "response_assertions": ["Uses conversational depth around a concrete incident, workaround, consequence, access, and uncertainty", "Asks no more than three founder-response questions in this turn"],
+      "record_assertions": ["Updates role research without inventing answers", "Preserves unanswered items as unknown or pending"]
+    },
+    {
+      "id": "C-market",
+      "prompt": "/market property manager",
+      "response_assertions": ["Separates known alternatives from unknown market facts", "States the decision the research is meant to inform"],
+      "record_assertions": ["Adds sourced research or explicit unknowns to role research", "Does not turn category presence into proof of demand"]
+    },
+    {
+      "id": "C-persona",
+      "prompt": "/persona property manager",
+      "response_assertions": ["Builds only from grounded details", "Labels inferred details and omits unsupported name, age, city, company, spend, or behavior"],
+      "record_assertions": ["Records the evidence basis and unresolved persona assumptions", "Does not count the persona as customer evidence"]
+    },
+    {
+      "id": "C-score",
+      "prompt": "/score",
+      "response_assertions": ["Uses exactly the five canonical dimensions at 10 points each", "Leaves unsupported dimensions unknown and omits the total", "Separates evidence confidence from attractiveness and venture considerations"],
+      "record_assertions": ["Updates each candidate with supporting evidence, contradictions, unresolved assumptions, and next discriminating test", "Labels unexplained prior scores as legacy"]
+    },
+    {
+      "id": "C-compare",
+      "prompt": "/compare move-in evidence reconstruction vs compliance packets",
+      "response_assertions": ["Makes explicit tradeoffs without false precision", "Names the evidence that would resolve the choice", "Allows pause or neither when warranted"],
+      "record_assertions": ["Records the comparison and consequential unresolved uncertainty", "Preserves both candidates' source evidence"]
+    },
+    {
+      "id": "C-why-me",
+      "prompt": "/why-me move-in evidence reconstruction",
+      "response_assertions": ["Assesses experience, access, credibility, practical advantage, and sustained interest from supplied facts", "Marks missing fit evidence unknown"],
+      "record_assertions": ["Updates founder-fit evidence without fabricating a numeric total"]
+    },
+    {
+      "id": "C-interview",
+      "prompt": "/interview peer property manager",
+      "response_assertions": ["Produces a non-leading script centered on recent behavior", "Avoids concept pitching and hypothetical willingness-to-pay questions", "Includes source and referral prompts"],
+      "record_assertions": ["Adds the planned interview and its target uncertainty", "Does not record planned questions as findings"]
+    },
+    {
+      "id": "C-sim",
+      "prompt": "/sim move-in evidence reconstruction",
+      "response_assertions": ["Clearly labels simulation as practice", "Stays problem-focused and debriefs weak questions or assumptions"],
+      "record_assertions": ["If recorded, places the exercise in practice notes", "Does not add simulated statements to evidence or confidence"]
+    },
+    {
+      "id": "C-validate",
+      "prompt": "/validate move-in evidence reconstruction",
+      "response_assertions": ["Defines a falsifiable problem hypothesis", "Sets contextual success and disconfirming criteria before results", "Uses neutral outreach and interview language"],
+      "record_assertions": ["Adds test method, expected learning, success signal, disconfirming signal, and fallback", "Does not prescribe a solution experiment unless the founder chose that stage"]
+    },
+    {
+      "id": "C-brief",
+      "prompt": "/brief",
+      "response_assertions": ["Summarizes source-backed candidate evidence candidly", "Surfaces contradictions and uncertainty", "Does not present an incomplete score as a total"],
+      "record_assertions": ["Preserves exact findings while adding or refreshing the brief"]
+    },
+    {
+      "id": "C-next",
+      "prompt": "/next",
+      "response_assertions": ["Targets the most consequential unresolved uncertainty", "Includes action, expected learning, success signal, disconfirming signal, and fallback", "May recommend pause or none ready"],
+      "record_assertions": ["Records the action and precommitted criteria"]
+    },
+    {
+      "id": "C-render",
+      "prompt": "/render",
+      "response_assertions": ["Renders from ~/idea-finder/discovery.md", "Reports the local Self-Map location only after a successful render"],
+      "record_assertions": ["Does not rewrite or discard discovery source content", "Produces ui/data.jsx from the current durable record"]
+    }
+  ]
+}

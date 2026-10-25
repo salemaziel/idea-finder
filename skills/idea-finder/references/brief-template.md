@@ -1,8 +1,7 @@
 # Founder Brief Template
 
 Synthesize from the full discovery document. Write it as if the founder is
-the author — direct, confident, no hedging. A reader should know in 60 seconds
-whether this is worth a coffee conversation.
+the author — direct and candid about uncertainty. Distinguish established facts, customer reports and inference; cite source record items. Never turn missing evidence into confident claims. Use “unknown” or “not established” where needed, including WHY NOW. A reader should understand both promise and limitations in 60 seconds. Record the brief under INSIGHTS ACROSS INTERVIEWS with its date; preserve source notes.
 
 ```
 FOUNDER BRIEF — [Date]
@@ -20,12 +19,12 @@ WHY ME
  knowledge, network relationships, or personal experience with the pain]
 
 WHAT I'VE LEARNED
-[3–5 bullet points: the most important signals from interviews, research,
- and testing so far]
+[Key supported signals, source types and confidence; include contradictions,
+ unresolved assumptions and what remains untested]
 
 WHAT I'M DOING NEXT
-[2–3 sentences: next concrete steps — interviews to run, experiments to
- launch, hypotheses to test]
+[One discriminating next test, expected learning, success and disconfirming
+ signals and fallback, suited to the founder goal and resources]
 
 WHAT I NEED
 [1–2 sentences: what kind of help would move this forward fastest —

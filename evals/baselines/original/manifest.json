@@ -1,0 +1,24 @@
+{
+  "label": "original",
+  "description": "Committed baseline before the useful-discovery revision",
+  "git_commit": "f076e11254d57914977a0f58871ff712485fb187",
+  "skill_path": "evals/baselines/original/SKILL.md",
+  "skill_sha256": "005f4608d179eb27ccba79ee5f38ef71405dae085419b4cfb6bb5abd73ee61df",
+  "references_path": "evals/baselines/original/references",
+  "references_sha256": {
+    "anti-patterns.md": "d1d2374f28d6db56ab72bf5d03794dc423fe89ead2e4c78c6c1d605fbde03b2f",
+    "brief-template.md": "3c03ae7813fc16ae41211cb228d7941c4dd0e3d416b85ddd7657079c534dd411",
+    "competitor-research.md": "89dcafe5e789587865037c05a85e8913809b51a11a0acb410f52a65c31a5c4b2",
+    "distribution-mapping.md": "39c21bc886fd693ead3ccefd160b61bd9cdeb8f90539857b4c905102cdc7a2e2",
+    "doc-template.md": "3c0bd018a1c766ee0a16b8d54c786eeb1a28f34b9828d55474138076a5337d9a",
+    "incumbent-risk.md": "756e4fc29acd80d89dfeba81359162d53900dc5a3a57f7a1edd4c5e2c876bc87",
+    "industry-workflow.md": "9e0a09cb7b4fe4ebd206fe698e166336df013abcf83e1b358bfc2544835c2b84",
+    "interview-blocks.md": "d160c9f47f36900e049b2aa5563e53dc25a3bf45711871f4467de073b34d2fae",
+    "interview-scripts.md": "3ec73b425c489dda7028f8b1659b9b137fc0dd9f77508bbf4f1fea879444d819",
+    "network-mapping.md": "4551b294a1d8b7a18905e2417841bd0902eadc3e17016a8673ad3ca52002b211",
+    "opportunity-ranking.md": "1b63706fa8ab3d6296d52285b2f936308464dbc3dbdec0217f49eb1ad5aafb92",
+    "pain-extraction.md": "b1de6934f1533b1cc990b5e82b8ab33ed00655108e62a86b92291fc8886fcae1",
+    "tech-behavioral-trends.md": "08801019f8f48cf26137c0344b2174097aeb19171d8ce63b2250cebe454cd8c8",
+    "validation-playbook.md": "b029182cb77283245c7f97195753251e7f82f5927c0b93d876570f489436935e"
+  }
+}

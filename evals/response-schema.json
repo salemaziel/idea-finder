@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["assistant_response", "discovery_document"],
+  "properties": {
+    "assistant_response": {
+      "type": "string",
+      "description": "The exact response shown to the founder for this turn."
+    },
+    "discovery_document": {
+      "type": "string",
+      "description": "The complete durable discovery.md after this turn, preserving prior source material."
+    }
+  }
+}

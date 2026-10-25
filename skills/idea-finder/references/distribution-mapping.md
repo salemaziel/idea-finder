@@ -1,20 +1,5 @@
-# Distribution Mapping Guide
+# Reach and distribution
 
-## Where personas live
+Start with the specific customer and buyer, the founder's actual access and the desired next learning step. Map known contacts, warm introductions, relevant communities, associations or professional channels. Verify a community's relevance and participation rules before proposing outreach; do not invent membership or permission.
 
-| Persona | Reddit | LinkedIn | Communities |
-|---------|--------|----------|-------------|
-| Recruiting coordinator | r/recruiting | Talent Acquisition | RecOps Collective |
-| Property manager | r/PropertyManagement | NARPM | BiggerPockets |
-| Bookkeeper | r/Bookkeeping | Accounting & Finance | QuickBooks ProAdvisor |
-| Legal coordinator | r/paralegal | Legal Operations | CLOC |
-| Healthcare admin | r/HealthcareWorkers | Healthcare Ops | MGMA |
-| Field service | r/HVAC, r/fieldservice | Field Service | ServiceTitan community |
-| Freelance creative | r/freelance | Creative groups | Designer Hangout |
-
-## Tactics
-
-Reddit: "Does anyone else deal with [problem]?" — not a pitch.
-LinkedIn: Post describing the pain, tag relevant titles.
-Associations: Sponsor/speak at local chapters.
-Referral chains: Every interview → 2–3 referrals. Fastest path to 50 interviews.
+Choose the smallest feasible contact route and a fallback. Track attempted versus confirmed access and sampling bias in NETWORK CONTACTS and VALIDATION PLAN. A reachable online group is not proof of a repeatable sales channel. For venture goals, separately investigate scalable distribution when it affects the decision; for a small business, a narrow relationship channel may suffice. Draft neutral invitations; do not post, tag people, sponsor events or send messages without instruction. No referral or interview quotas.

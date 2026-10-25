@@ -1,25 +1,7 @@
-# Pain Extraction Guide
+# Pain extraction
 
-## Pain hierarchy (weakest to strongest)
+Find the incident behind a complaint: who encountered it, when, trigger, consequence, frequency and current workaround. Preserve exact quotes and distinguish firsthand reports from directly observed behavior. Separate founder experience, customer reports, external research and inference using the canonical [assessment](opportunity-ranking.md).
 
-1. Vague dissatisfaction — "the software isn't great" → weak
-2. Feature complaint — "I wish it had X" → weak
-3. Workflow gap — "I have to go to three places to do one thing" → medium
-4. Recurring manual work — "I do this same thing every [period]" → strong
-5. Workaround with cost — "I built a spreadsheet because the software can't" → strong
-6. Financial loss or risk — "it cost us $X" or "we could get sued if..." → very strong
-7. Near-miss or incident — "last month we almost lost a client because..." → very strong
+Vague dissatisfaction and feature wishes invite follow-up, not dismissal or confirmation. Specific workflow disruptions, staff time, losses and near-misses can be useful signals, but corroborate scope and magnitude. Ask when the workaround succeeds and whether its cost is acceptable; a spreadsheet alone is not evidence of unmet demand.
 
-## What counts as a real workaround
-
-- Built a separate tracking system (spreadsheet, doc, sticky notes)
-- Hired someone specifically to manage the gap
-- Written a script or hack to bridge two systems
-- Established a recurring manual ritual (weekly email, calendar reminder)
-
-## What NOT to count
-
-- "It would be nice if..." (aspiration, not pain)
-- "I heard someone else complains about..." (secondhand)
-- Pain that happens once a year
-- Pain that already has an affordable, well-adopted solution
+Keep infrequent expensive problems eligible. Ask about event severity, exposure, prevention costs, who bears risk and when a buying decision happens. Existing affordable alternatives weaken a candidate only when they actually serve this segment's circumstances. Seek contradictions and satisfied users as well as painful stories. Record unresolved assumptions and a discriminating test rather than an automatic verdict.

@@ -1,24 +1,5 @@
-# Incumbent Risk Analysis
+# Incumbent risk
 
-## Why incumbents avoid certain problems
+Investigate whether an incumbent serves this exact segment, how customers currently cope, and what switching would require. Consider incentives, segment economics, specialization and platform constraints as hypotheses; do not presume a large company cannot or will not enter.
 
-1. ACV too low — $200/mo × 500 customers = $1.2M, not interesting to large cos
-2. Segment too small/messy — enterprise vendors define market upward
-3. Problem adjacent to core — real but not their growth driver
-4. Platform-locked — integrating with competitors isn't in their interest
-5. Requires specialization — incumbents build general tools
-
-## Six questions per candidate
-
-1. Who is the largest current player?
-2. Do they serve this exact segment (size, type)?
-3. Could they extend to solve this in 12 months?
-4. Do they have financial incentive to solve it?
-5. Is there a structural reason they won't?
-6. Are there 2+ incumbents whose customers have this — making a neutral integration play viable?
-
-## Risk levels
-
-HIGH — Incumbent sells to this exact segment, problem is core to their value prop.
-MEDIUM — Could solve this but hasn't. Watch for downmarket extension.
-LOW — Structurally can't or won't. Price point, buyer type, or platform conflict creates durable barrier.
+For the decision at hand, ask who the relevant providers are, what they cover, why a documented gap persists, what evidence suggests it might close, and what the consequence would be for this founder. Check conflicting examples and date sources. Describe risk and uncertainty with a next test; no automatic high/low label establishes defensibility. Keep venture defensibility separate from the common five-dimension assessment. A narrow profitable service can be viable without a durable technology moat.

@@ -1,0 +1,17 @@
+{
+  "fixture_version": 1,
+  "cases": [
+    {
+      "id": "K-legacy-resume-render",
+      "record": "fixtures/records/legacy-returning.md",
+      "resume_assertions": ["Loads the existing round", "Does not restart intake", "Preserves original quote and unexplained scores", "Labels unexplained scores as legacy when reassessing"],
+      "render_assertions": ["Parser completes without error", "Parser yields at least one role and candidate; generated data.jsx includes intact candidate source in DISCOVERY_DOC", "Top-level headings and ### Problem 1: remain unchanged in source"]
+    },
+    {
+      "id": "K-revised-resume-render",
+      "record": "fixtures/records/revised.md",
+      "resume_assertions": ["Loads the existing round", "Recognizes evidence, contradiction, assumption, confidence, and next-test fields", "Does not restart intake"],
+      "render_assertions": ["Parser completes without error", "Parser yields at least one role and candidate; generated data.jsx includes intact candidate source in DISCOVERY_DOC", "Unknown scores and new evidence fields do not break generation", "Top-level headings and ### Problem 1: remain unchanged in source"]
+    }
+  ]
+}

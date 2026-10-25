@@ -1,0 +1,8 @@
+{
+  "label": "compressed",
+  "description": "Uncommitted compressed baseline present before the useful-discovery revision",
+  "skill_path": "evals/baselines/compressed/SKILL.md",
+  "skill_sha256": "1ac25c20e244da24644886d611facb5062f09ce5b1529112349f93efe4ffda20",
+  "references_path": "evals/baselines/compressed/references",
+  "references_note": "Every vendored skill-local reference is byte-identical to original at snapshot time; verify using the original manifest hashes."
+}

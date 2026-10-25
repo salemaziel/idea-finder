@@ -1,7 +1,6 @@
-# Interview Blocks — 13 structured blocks for Round 1
+# Interview Blocks — optional whole-life question bank
 
-Work through all 13 blocks conversationally — 2–3 questions at a time, never
-as a list. Follow up on anything interesting before moving on.
+Select relevant questions after understanding the founder's goal, time, constraints, observations and customer access. Ask two or three at a time and follow concrete incidents before moving on. Skip known or irrelevant areas; no block or demographic field is required. Explore overlooked life, community and relationship experiences with permission to skip personal topics. Reflect tentative interpretations back before recording them as facts. These prompts inspire conversation, not a completion checklist. Rephrase any prompt that presumes pain or a need for automation into a neutral recent-example question.
 
 ---
 
@@ -111,17 +110,16 @@ of themselves as 'a market'.")*
 
 ### BLOCK 11 — Identity reflection
 
-Before moving to research, reflect everything back. Build the full Roles List
-from what you've heard. Frame it like this:
+When a reflection would help, summarize relevant roles from what was actually shared. Invite corrections before treating interpretations as facts. For example:
 
-> "Before we research anything, I want to show you what you've just described.
+> "Here is one way to connect what you have described.
 > You're not just a [job title]. You're also:
 >
-> [List every role/identity — use the format below]
+> [List relevant roles/identities — use the format below]
 >
-> Each of these is a real market with real problems. We're going to look at all of them."
+> Some of these may reveal useful problems. Which, if any, feels worth exploring?"
 
-List roles in this format — name every identity, no matter how small:
+Use this format for roles the founder recognizes; do not require a complete life inventory:
 
 | Role | Category | Emoji | How Identified |
 |------|----------|-------|----------------|
@@ -145,15 +143,12 @@ Then ask: "Does anything on that list surprise you? Did I miss anything?"
 
 ---
 
-### BLOCK 13 — Your network (named contacts — last in Session 1)
+### BLOCK 13 — Your network (use whenever access matters)
 
 Frame it this way before asking:
 
-> "Last thing — and this one matters a lot. I'm not asking about categories of
-> people you could theoretically know. I want real names. Who are the 5 to 10
-> people you could text right now, today, and they'd agree to a 30-minute
-> honest conversation? Think about your last week: who did you message, see at
-> work, run into, or think about?"
+> "Who, if anyone, could help us understand this workflow? A name, initial or
+> relationship label is enough. What contact or introduction would feel feasible?"
 
 For each person they name, collect conversationally (one at a time):
 - First name and last initial
@@ -162,11 +157,8 @@ For each person they name, collect conversationally (one at a time):
 - Which of your roles do they share, inform, or work close to?
 - Have you ever heard them complain about the same thing repeatedly?
 
-**Push for at least 5 names.** If they stall: "Think about people from different
-parts of your life — work friends, people from [hobby or community they
-mentioned], old colleagues, family members with interesting jobs."
+Accept limited or no access without pressure. If useful, explore one possible introduction from work, a hobby, community or family. Do not assume a named contact will agree to talk.
 
 After collecting names, summarize:
-> "Here's your starting lineup: [list with what they do]. These are your first
-> interview targets. Type /idea-finder next session and I'll load your document
-> with interview scripts ready."
+> "Here are the possible contacts and what each might help us learn.
+> Which route is realistic given your time and relationships?"

@@ -18,7 +18,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 ROOT = Path(__file__).resolve().parent.parent
 UI_DIR = ROOT / "ui"
-DISCOVERY_MD = ROOT / "discovery.md"
+DISCOVERY_MD = Path.home() / "idea-finder" / "discovery.md"
 
 SECTION_HEADER = "## QUESTION ANSWERS"
 
@@ -51,6 +51,7 @@ def save_answer(data: dict) -> None:
         # Create the section at the end of the file
         text = text.rstrip() + f"\n\n{SECTION_HEADER}\n" + entry
 
+    DISCOVERY_MD.parent.mkdir(parents=True, exist_ok=True)
     DISCOVERY_MD.write_text(text, encoding="utf-8")
     print(f"  saved  [{role}] {question[:70]}")
 

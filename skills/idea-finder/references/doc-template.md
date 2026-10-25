@@ -2,7 +2,7 @@
 
 Use this exact template when creating `~/idea-finder/discovery.md`.
 The section headers here are structural — every command and future session
-depends on them to locate and update the right sections.
+depends on them to locate and update the right sections. Preserve them in older records without requiring migration. Fields are optional, not an intake checklist: use [PENDING], unknown or not relevant rather than inventing values. Preserve original quotes, notes and old scores; label unexplained old scores as legacy assessments with rubric/evidence unknown. Evidence confidence and scoring follow opportunity-ranking.md.
 
 ```
 # DISCOVERY DOCUMENT
@@ -12,11 +12,17 @@ version: 1 | date: [today] | round: 1
 
 ## PROFILE
 
-name:
-age:
-gender:
-location_current:
-location_grew_up:
+name: [PENDING]
+age: [optional]
+gender: [optional]
+location_current: [optional]
+location_grew_up: [optional]
+founder_goal: [small business / venture / undecided / own definition]
+available_time: [PENDING]
+constraints: [PENDING]
+customer_access: [PENDING]
+discovery_route: [broad / focused / synthesis]
+stage: problem discovery
 
 ---
 
@@ -74,7 +80,8 @@ notable: [anyone whose recurring problem you notice clearly]
 
 ### [Role Name]
 Category: [professional/hobby/life/family/social]
-Research status: [pending/done]
+Research status: [not investigated / partial / sufficient for current decision]
+Decision uncertainty: [what this research could change]
 
 Goals:
 - [what people in this role are trying to achieve]
@@ -95,15 +102,16 @@ Tech narratives:
 - [why now — what recently became possible]
 
 TAM estimate:
-- [# of people in this role]: [source or estimate]
-- [what a solution would cost them per year]: [estimate]
-- [rough TAM]: [# × price]
+- [optional: buyer count/range, source/date; unknown if not investigated]
+- [optional: price/spend assumption, evidence and limits]
+- [optional: estimate/range only when decision-relevant; not a prerequisite]
 
 User's personal challenges:
 - [what they said — rating 1-5 and quotes]
 
 Raw research notes:
-[Paste verbatim excerpts from Reddit threads, forum posts, review sites,
+[Preserve existing excerpts and capture relevant short excerpts with source/date from
+Reddit threads, forum posts, review sites,
 industry reports. These are the evidence behind the bullet summaries above.
 The web app shows only the bullets; this section preserves the raw signal.]
 
@@ -122,8 +130,20 @@ The web app shows only the bullets; this section preserves the raw signal.]
 Persona: [role + company size + context]
 Pain moment: [exactly what breaks]
 Workaround: [what they do instead]
-Score: [X/50]
-Status: ACTIVE / ELIMINATED
+Score: [unknown until all five dimensions have evidence; otherwise optional X/50]
+Pain intensity: [unknown or X/10 — rationale/source]
+Frequency: [unknown or X/10 — rationale/source]
+Willingness to pay: [unknown or X/10 — rationale/source]
+Founder fit: [unknown or X/10 — rationale/source]
+Accessibility: [unknown or X/10 — rationale/source]
+Evidence confidence: [claim/dimension — low/medium/high and reason]
+Supporting evidence: [source type, source/date, exact quote or observation, scope]
+Contradictions: [conflicting evidence, including satisfied customers]
+Unresolved assumptions: [what is inferred, missing or untested]
+Next discriminating test: [action, learning, success/disconfirmation, fallback]
+Goal considerations: [small-business feasibility; venture considerations separately]
+Assessment history: [dated changes and reasons; preserve legacy scores]
+Status: ACTIVE / PAUSED / ELIMINATED [reason; no automatic cutoff]
 
 ---
 
@@ -155,13 +175,13 @@ Status: ACTIVE / ELIMINATED
 
 ## COMPETITOR RESEARCH
 
-[Final round only]
+[When relevant to the current uncertainty; not a mandatory stage]
 
 ---
 
 ## VALIDATION PLAN
 
-[Final round only]
+[When relevant to the current uncertainty; not a mandatory stage]
 
 ---
 
